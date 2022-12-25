@@ -1,3 +1,5 @@
+import IndexStyle from "../styles/index.module.scss";
+
 export default function Home() {
-  return <div className="taeh">메인</div>;
+  return <div className={IndexStyle.taeh}>메인</div>;
 }

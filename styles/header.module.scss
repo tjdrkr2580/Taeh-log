@@ -1,0 +1,23 @@
+.header {
+  padding: 0.5rem 0;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  ul {
+    display: flex;
+    gap: 1.5rem;
+    li {
+      font-family: "Mrs Saint Delafield", cursive;
+      font-size: 2rem;
+      cursor: pointer;
+      &:hover {
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+}
+
+.logo {
+  font-size: 3rem;
+  font-family: "Mrs Saint Delafield", cursive;
+}

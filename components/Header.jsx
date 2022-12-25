@@ -1,17 +1,19 @@
 import Link from "next/link";
 
+import HeaderStyle from "../styles/header.module.scss";
+
 const Header = () => {
   return (
-    <section>
+    <section className={HeaderStyle.header}>
       <Link href="/">
-        <h1 className="logo"></h1>
+        <h1 className={HeaderStyle.logo}>Taeh</h1>
       </Link>
       <ul>
         <Link href="/">
-          <li>Home</li>
+          <li>home</li>
         </Link>
         <Link href="/">
-          <li>Posts</li>
+          <li>blog</li>
         </Link>
       </ul>
     </section>

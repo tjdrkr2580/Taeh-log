@@ -3,4 +3,29 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.taeh-dark-layout {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #121212;
+  color: white;
+
+  a {
+    color: white;
+  }
+}
+
+.taeh-layout {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f8f8ff;
+  color: rgb(25, 25, 25);
+
+  a {
+    color: rgb(25, 25, 25);
+  }
 }
