@@ -12,6 +12,7 @@
     "@next/font": "13.1.1",
     "eslint": "8.30.0",
     "eslint-config-next": "13.1.1",
+    "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "next": "13.1.1",
     "react": "18.2.0",
