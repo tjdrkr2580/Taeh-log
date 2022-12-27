@@ -9,11 +9,8 @@ const Header = () => {
         <h1 className={HeaderStyle.logo}>Taeh</h1>
       </Link>
       <ul>
-        <Link href="/">
-          <li>home</li>
-        </Link>
-        <Link href="/">
-          <li>blog</li>
+        <Link href="/about">
+          <li>About</li>
         </Link>
       </ul>
     </section>
