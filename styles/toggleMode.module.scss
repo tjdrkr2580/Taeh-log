@@ -8,6 +8,11 @@
   border-radius: 50%;
   font-size: 6rem;
   animation: moonAnimation infinite 3s ease-in-out;
+  @media (max-width: 800px) {
+    font-size: 4rem;
+    right: 1rem;
+    bottom: 2rem;
+  }
 }
 
 @keyframes moonAnimation {
