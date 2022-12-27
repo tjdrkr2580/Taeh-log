@@ -65,10 +65,11 @@
     margin: 0.5rem 0;
     height: 1.5rem;
     display: flex;
+    padding: 1rem 0;
     align-items: center;
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(200, 200, 200);
     &:hover {
-      background-color: rgb(140, 140, 140);
+      background-color: rgb(180, 180, 180);
     }
     ::before {
       content: ">";
