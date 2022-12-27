@@ -12,8 +12,13 @@
     "@next/font": "13.1.1",
     "eslint": "8.30.0",
     "eslint-config-next": "13.1.1",
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.3",
     "next": "13.1.1",
+    "next-mdx-remote": "3.0.8",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "recoil": "^0.7.6",
+    "sass": "^1.57.1"
   }
 }

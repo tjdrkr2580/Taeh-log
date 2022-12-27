@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+// font-family: 'Mrs Saint Delafield', cursive;
+// font-family: 'Noto Sans KR', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+$desktop: 1024px;
+
+@mixin mobile {
+  @media (max-width: calc($desktop - 1)) {
+    @content;
+  }
+} /*반응형, 브라우저 크기가 768이상, 1023px 이하일때*/
+@mixin tablet {
+  @media (min-width: $desktop) {
+    @content;
+  }
+} /*반응형, 브라우저 크기가 1024px 이상일때*/
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin ellipsis {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin ellipsis-multi($line) {
+  @include ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line; //원하는 라인수
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}

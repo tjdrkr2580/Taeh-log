@@ -1,0 +1,28 @@
+.togglemode {
+  cursor: pointer;
+  position: fixed;
+  bottom: 3rem;
+  right: 4rem;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  font-size: 6rem;
+  animation: moonAnimation infinite 3s ease-in-out;
+  @media (max-width: 800px) {
+    font-size: 4rem;
+    right: 1rem;
+    bottom: 2rem;
+  }
+}
+
+@keyframes moonAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
