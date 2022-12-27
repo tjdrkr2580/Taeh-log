@@ -1,8 +1,14 @@
 .header {
-  padding: 0.5rem 0;
+  z-index: 999;
+  height: 5rem;
+  top: 0%;
+  width: 100vw;
+  position: fixed;
+  padding-top: 0.5rem;
   justify-content: space-around;
   display: flex;
   align-items: center;
+  background-color: #f8f8ff;
   ul {
     display: flex;
     gap: 1.5rem;

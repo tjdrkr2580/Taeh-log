@@ -5,10 +5,12 @@
   font-size: 20px;
   list-style: none;
   text-decoration: none;
-  transition: 0.25s;
+  transition: 0.25s background-color, 0.25s color, 0.25s transform,
+    0.25s letter-spacing;
 }
 
 .taeh-dark-layout {
+  padding-top: 7rem;
   width: 100vw;
   min-height: 100vh;
   background-color: #121212;
@@ -20,6 +22,7 @@
 }
 
 .taeh-layout {
+  padding-top: 7rem;
   width: 100vw;
   min-height: 100vh;
   background-color: #f8f8ff;

@@ -1,0 +1,13 @@
+.postWrapper {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  section {
+    width: 70vw;
+    max-width: 750px;
+    p {
+      line-height: 1.35;
+      word-wrap: break-word;
+    }
+  }
+}
