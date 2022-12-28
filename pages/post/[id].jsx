@@ -7,7 +7,6 @@ import Id from "../../styles/id.module.scss";
 import HeadInfo from "../../components/HeadInfo";
 
 const Post = ({ data, mdxSource }) => {
-  console.log(data);
   return (
     <>
       <HeadInfo title={data.title + " | Taeh"} desc={data.desc} />
