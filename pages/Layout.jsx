@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import React from "react";
 import Header from "../components/Header";
 import HeadInfo from "../components/HeadInfo";
@@ -11,6 +12,7 @@ const Layout = ({ children }) => {
         <Header />
         {children}
         <ToggleMode />
+        <Analytics />
       </div>
     </>
   );
