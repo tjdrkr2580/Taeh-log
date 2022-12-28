@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://taeh.shop/
+
+# Sitemaps
+Sitemap: https://taeh.shop/sitemap.xml
