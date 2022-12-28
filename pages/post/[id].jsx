@@ -4,14 +4,20 @@ import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import Id from "../../styles/id.module.scss";
+import HeadInfo from "../../components/HeadInfo";
 
-const Post = ({ data, content, mdxSource }) => {
+const Post = ({ data, mdxSource }) => {
+  console.log(data);
   return (
-    <div className={Id.postWrapper}>
-      <section className={Id.markdown}>
-        <MDXRemote {...mdxSource} />
-      </section>
-    </div>
+    <>
+      <HeadInfo title={data.title + " | Taeh"} desc={data.desc} />
+      <div className={Id.postWrapper}>
+        <section className={Id.markdown}>
+          <h1>{data.title}</h1>
+          <MDXRemote {...mdxSource} />
+        </section>
+      </div>
+    </>
   );
 };
 

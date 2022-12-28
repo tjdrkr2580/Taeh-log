@@ -1,5 +1,5 @@
 .postWrapper {
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
   section {
@@ -9,12 +9,11 @@
 }
 
 .markdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   h1 {
     font-size: 1.2rem;
-    padding-bottom: 0.4rem;
-  }
-  hr {
-    margin-bottom: 0.5rem;
   }
   p {
     margin: 0.2rem 0;
@@ -26,12 +25,15 @@
     font-size: 0.9rem;
     color: #4284f3;
     cursor: pointer;
+    &:hover {
+      color: #7babfe;
+    }
   }
   pre {
     cursor: pointer;
     margin: 0.5rem 0;
     font-size: 0.9rem;
-    padding: 0.4rem 0.2rem;
+    padding: 0.4rem 0.5rem;
     background-color: rgb(200, 200, 200);
     &:hover {
       background-color: rgba(180, 180, 180);
@@ -42,6 +44,9 @@
       line-height: 1.4;
       color: black;
       background-color: transparent;
+      &:hover {
+        color: black;
+      }
     }
   }
   ul {
@@ -67,14 +72,11 @@
     display: flex;
     padding: 1rem 0;
     align-items: center;
-    background-color: rgb(200, 200, 200);
-    &:hover {
-      background-color: rgb(180, 180, 180);
-    }
     ::before {
-      content: ">";
-      padding: 0 0.5rem;
-      color: #333;
+      content: " ";
+      padding: 0 0.1rem;
+      margin-right: 1rem;
+      background-color: rgba(200, 200, 200);
     }
   }
 }
