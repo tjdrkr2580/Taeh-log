@@ -5,13 +5,12 @@
   font-size: 20px;
   list-style: none;
   text-decoration: none;
-  transition: 0.25s background-color, 0.25s color, 0.25s transform,
-    0.25s letter-spacing;
+  transition: 0.25s background-color, 0.25s letter-spacing;
   font-family: "Noto Sans KR", sans-serif;
 }
 
 .taeh-dark-layout {
-  padding-top: 5rem;
+  padding-top: 4rem;
   width: 100vw;
   min-height: 100vh;
   background-color: #121212;
