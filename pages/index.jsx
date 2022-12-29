@@ -4,10 +4,16 @@ import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
 import Image from "next/image";
+import HeadInfo from "../components/HeadInfo";
 
 function Home({ posts }) {
   return (
     <div className={IndexStyle.taeh}>
+      <HeadInfo
+        title="Home | Taeh"
+        desc="김태현의 서걱 서걱 개발 블로그"
+        url="https://taeh.shop"
+      />
       <ul className={IndexStyle.postListWrapper}>
         {posts.map((post, index) => (
           <Link
