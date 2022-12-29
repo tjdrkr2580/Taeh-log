@@ -9,7 +9,11 @@ import HeadInfo from "../../components/HeadInfo";
 const Post = ({ data, mdxSource }) => {
   return (
     <>
-      <HeadInfo title={data.title + " | Taeh"} desc={data.desc} />
+      <HeadInfo
+        title={data.title + " | Taeh"}
+        desc={data.desc}
+        url={`https://taeh.shop`}
+      />
       <div className={Id.postWrapper}>
         <section className={Id.markdown}>
           <h1>{data.title}</h1>
