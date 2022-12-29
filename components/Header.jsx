@@ -20,9 +20,7 @@ const Header = () => {
         <Link href="/about">
           <li>About</li>
         </Link>
-        <li class onClick={clickToggle}>
-          {darkmode ? "Night" : "Morning"}
-        </li>
+        <li onClick={clickToggle}>{darkmode ? "Night" : "Morning"}</li>
       </ul>
     </section>
   );
