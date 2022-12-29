@@ -5,7 +5,14 @@
 .postListWrapper {
   display: grid;
   gap: 1rem;
+  justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
+  @media (max-width: 641px) {
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 960px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .postlist {

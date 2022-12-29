@@ -19,9 +19,8 @@ function Home({ posts }) {
               width="140"
               height="140"
               alt="darkmode icon"
-              placeholder="blur"
               quality={100}
-              src={require(`/public/thumbnail/${post.fileName}.jpg`)}
+              src={`/thumbnail/${post.fileName}.jpg`}
             />
             <li>
               <h1>{post.data.title}</h1>
