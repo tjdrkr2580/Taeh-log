@@ -1,4 +1,31 @@
-.header {
+.lightHeader {
+  z-index: 999;
+  height: 3rem;
+  padding-top: 2rem;
+  border-bottom: 0.02rem solid #ebecf0;
+  top: 0%;
+  width: 100vw;
+  position: fixed;
+  padding-top: 0.5rem;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  background-color: #f8f8ff;
+  ul {
+    display: flex;
+    gap: 1.5rem;
+    li {
+      font-family: "Mrs Saint Delafield", cursive;
+      font-size: 1.5rem;
+      cursor: pointer;
+      &:hover {
+        letter-spacing: 0.1rem;
+      }
+    }
+  }
+}
+
+.darkHeader {
   z-index: 999;
   height: 3rem;
   padding-top: 2rem;
@@ -10,7 +37,7 @@
   justify-content: space-around;
   display: flex;
   align-items: center;
-  background-color: #f8f8ff;
+  background-color: #121212;
   ul {
     display: flex;
     gap: 1.5rem;

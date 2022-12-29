@@ -1,13 +1,13 @@
 .togglemode {
   cursor: pointer;
   position: fixed;
-  bottom: 3rem;
-  right: 4rem;
+  bottom: 2rem;
+  right: 3rem;
   border: none;
   background-color: transparent;
   border-radius: 50%;
-  font-size: 6rem;
-  animation: moonAnimation infinite 3s ease-in-out;
+  animation: toggleModeFlying infinite 3s ease-in-out;
+  animation: toggleModeRotate infinite 15s linear;
   @media (max-width: 800px) {
     font-size: 4rem;
     right: 1rem;
@@ -15,14 +15,12 @@
   }
 }
 
-@keyframes moonAnimation {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(1rem);
-  }
-  100% {
-    transform: translateY(0rem);
-  }
+.icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: yellow;
+  border-radius: 50%;
+  font-size: 1rem;
+  color: black;
+  transition: 0.1s;
 }

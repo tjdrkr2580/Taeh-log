@@ -3,6 +3,7 @@ import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
+import Image from "next/image";
 
 function Home({ posts }) {
   return (
@@ -14,11 +15,22 @@ function Home({ posts }) {
             href={`/post/${post.fileName}`}
             key={index}
           >
+            <Image
+              width="140"
+              height="140"
+              alt="darkmode icon"
+              placeholder="blur"
+              quality={100}
+              src={require(`/public/thumbnail/${post.fileName}.jpg`)}
+            />
             <li>
               <h1>{post.data.title}</h1>
-              <p>{post.data.desc}</p>
               <span>{post.data.date}</span>
-              <div>{post.data.category}</div>
+              <ul>
+                <li>
+                  <span>{post.data.category}</span>
+                </li>
+              </ul>
             </li>
           </Link>
         ))}

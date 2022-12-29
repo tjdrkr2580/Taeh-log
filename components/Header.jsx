@@ -1,10 +1,18 @@
 import Link from "next/link";
+import { useRecoilState } from "recoil";
+import { mode } from "../store";
 
 import HeaderStyle from "../styles/header.module.scss";
 
 const Header = () => {
+  const [darkmode, setDarkmode] = useRecoilState(mode);
+  const clickToggle = () => {
+    setDarkmode(!darkmode);
+  };
   return (
-    <section className={HeaderStyle.header}>
+    <section
+      className={darkmode ? HeaderStyle.darkHeader : HeaderStyle.lightHeader}
+    >
       <Link href="/">
         <h1 className={HeaderStyle.logo}>Taeh</h1>
       </Link>
@@ -12,6 +20,9 @@ const Header = () => {
         <Link href="/about">
           <li>About</li>
         </Link>
+        <li class onClick={clickToggle}>
+          {darkmode ? "Night" : "Morning"}
+        </li>
       </ul>
     </section>
   );
