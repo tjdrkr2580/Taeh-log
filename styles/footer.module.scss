@@ -1,0 +1,29 @@
+.footer {
+  width: 100vw;
+  background-color: transparent;
+  height: 4rem;
+  ul {
+    padding: 1.5rem 0 1.5rem 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    @media (max-width: 660px) {
+      padding: 1.5rem 0 1.5rem 1rem;
+    }
+    li {
+      font-family: "Roboto", sans-serif;
+      font-size: 0.9rem;
+      @media (max-width: 660px) {
+        font-size: 0.65rem;
+      }
+      span {
+        @media (max-width: 660px) {
+          font-size: 1.2rem;
+        }
+        margin: 0 0.35rem 0 0.15rem;
+        font-size: 1.4rem;
+        font-family: "Mrs Saint Delafield", cursive;
+      }
+    }
+  }
+}

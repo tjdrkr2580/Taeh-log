@@ -9,7 +9,14 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .taeh-dark-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-top: 4rem;
   width: 100vw;
   overflow: hidden;
@@ -23,6 +30,9 @@
 }
 
 .taeh-layout {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
   padding-top: 4rem;
   width: 100vw;
   overflow: hidden;

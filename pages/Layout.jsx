@@ -1,6 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
 import React from "react";
 import { useRecoilValue } from "recoil";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HeadInfo from "../components/HeadInfo";
 import { mode } from "../store";
@@ -14,6 +15,7 @@ const Layout = ({ children }) => {
         <Header />
         {children}
         <Analytics />
+        <Footer />
       </div>
     </>
   );
