@@ -10,7 +10,7 @@ const Post = ({ data, mdxSource }) => {
   return (
     <>
       <HeadInfo
-        title={data.title + " | Taeh"}
+        title={data.title + " | Taeh Blog"}
         desc={data.desc}
         url={`https://taeh.shop`}
       />
