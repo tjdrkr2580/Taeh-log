@@ -10,8 +10,8 @@ function Home({ posts }) {
   return (
     <div className={IndexStyle.taeh}>
       <HeadInfo
-        title="Home | Taeh"
-        desc="김태현의 서걱 서걱 개발 블로그"
+        title="태현 | Taeh Blog"
+        desc="기록들을 차근차근 적어나갑니다, 낙오되는 일이 없도록"
         url="https://taeh.shop"
       />
       <ul className={IndexStyle.postListWrapper}>
