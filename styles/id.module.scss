@@ -13,15 +13,24 @@
   flex-direction: column;
   gap: 1rem;
   h1 {
+    @media (max-width: 412px) {
+      font-size: 0.8rem;
+    }
     font-size: 1.2rem;
   }
   p {
+    @media (max-width: 412px) {
+      font-size: 0.7rem;
+    }
     margin: 0.2rem 0;
     font-size: 0.9rem;
     line-height: 1.5;
     word-wrap: break-word;
   }
   code {
+    @media (max-width: 412px) {
+      font-size: 0.7rem;
+    }
     font-size: 0.9rem;
     color: #4284f3;
     cursor: pointer;
@@ -33,6 +42,9 @@
     cursor: pointer;
     margin: 0.5rem 0;
     font-size: 0.9rem;
+    @media (max-width: 412px) {
+      font-size: 0.7rem;
+    }
     padding: 0.4rem 0.5rem;
     background-color: rgb(200, 200, 200);
     &:hover {
@@ -52,15 +64,22 @@
   ul {
     line-height: 1.4;
     li {
+      @media (max-width: 412px) {
+        font-size: 0.7rem;
+      }
       font-size: 0.9rem;
-      margin-left: 1.5rem;
+      margin-left: 1rem;
       list-style: circle;
     }
   }
   ol {
     li {
-      margin-left: 1.5rem;
+      margin-left: 1rem;
       list-style: decimal;
+      font-size: 0.9rem;
+      @media (max-width: 412px) {
+        font-size: 0.7rem;
+      }
     }
   }
   blockquote {
@@ -77,6 +96,12 @@
       padding: 0 0.1rem;
       margin-right: 1rem;
       background-color: rgba(200, 200, 200);
+    }
+  }
+  strong {
+    font-size: 0.9rem;
+    @media (max-width: 412px) {
+      font-size: 0.7rem;
     }
   }
 }
