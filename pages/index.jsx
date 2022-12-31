@@ -26,7 +26,7 @@ function Home({ posts }) {
               height="140"
               alt="darkmode icon"
               quality={100}
-              src={`/thumbnail/${post.fileName}.jpg`}
+              src={`/thumbnail/${post.fileName}.png`}
             />
             <li>
               <h1>{post.data.title}</h1>

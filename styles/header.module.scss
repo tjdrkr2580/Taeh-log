@@ -1,4 +1,7 @@
 .lightHeader {
+  @media (max-width: 412px) {
+    height: 2.25rem;
+  }
   z-index: 999;
   height: 3rem;
   padding-top: 2rem;
@@ -15,6 +18,9 @@
     display: flex;
     gap: 1.5rem;
     li {
+      @media (max-width: 412px) {
+        font-size: 1rem;
+      }
       font-family: "Mrs Saint Delafield", cursive;
       font-size: 1.5rem;
       cursor: pointer;
@@ -28,6 +34,9 @@
 .darkHeader {
   z-index: 999;
   height: 3rem;
+  @media (max-width: 412px) {
+    height: 2.25rem;
+  }
   padding-top: 2rem;
   border-bottom: 0.02rem solid #333;
   top: 0%;
@@ -42,6 +51,9 @@
     display: flex;
     gap: 1.5rem;
     li {
+      @media (max-width: 412px) {
+        font-size: 1rem;
+      }
       font-family: "Mrs Saint Delafield", cursive;
       font-size: 1.5rem;
       cursor: pointer;
@@ -53,6 +65,9 @@
 }
 
 .logo {
+  @media (max-width: 412px) {
+    font-size: 1.5rem;
+  }
   font-size: 2.2rem;
   font-family: "Mrs Saint Delafield", cursive;
 }
